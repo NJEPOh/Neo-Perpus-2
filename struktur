@@ -1,0 +1,64 @@
+/perpustakaan/
+│
+├── index.php
+├── katalog.php
+├── detail-buku.php
+├── daftar.php
+├── login.php
+├── tentang.php
+├── bantuan.php
+├── kontak.php
+│
+├── anggota/
+│   ├── dashboard.php
+│   ├── riwayat.php
+│   ├── keranjang.php
+│   ├── perpanjangan.php
+│   └── pengaturan.php
+│
+├── admin/
+│   ├── dashboard.php
+│   │
+│   ├── katalog/              # CRUD data buku
+│   │   ├── index.php
+│   │   ├── create.php
+│   │   └── edit.php
+│   │
+│   ├── anggota/              # CRUD anggota
+│   │   ├── index.php
+│   │   ├── create.php
+│   │   └── edit.php
+│   │
+│   ├── denda/
+│   │   ├── index.php
+│   │   └── laporan.php
+│   │
+│   ├── laporan/              # Laporan peminjaman & keuangan
+│   │   ├── peminjaman.php
+│   │   ├── pengembalian.php
+│   │   └── keuangan.php
+│   │
+│   └── pengguna/             # CRUD staf/admin
+│       ├── index.php
+│       ├── create.php
+│       └── edit.php
+│
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── navbar.php
+│   ├── sidebar-admin.php
+│   ├── sidebar-anggota.php
+│   ├── auth.php
+│
+├── config/
+│   ├── database.php
+│   └── app.php
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── img/
+│
+└── sql/
+    └── perpustakaan.sql
