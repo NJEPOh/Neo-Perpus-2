@@ -1,11 +1,11 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "perpustakaan";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "perpustakaan";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
 if (!$conn) {
-    die("Koneksi database gagal: " . mysqli_connect_error());
+    die("Koneksi gagal: " . mysqli_connect_error());
 }

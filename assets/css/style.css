@@ -1,1 +1,215 @@
-/* =====  INDEX  ===== */
+/* ======================= */
+/* =====  INDEX.php  ===== */
+/* ======================= */
+
+/* =============================
+   GLOBAL STYLES
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f8fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =============================
+   NAVBAR
+============================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1b2a49, #0f1b2d);
+    color: #fff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .logo img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.navbar .logo h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #fff;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+.hero {
+    background: linear-gradient(120deg, #1b2a49, #0f1b2d);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 0 0 60px 60px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cbd2e0;
+}
+
+.hero .cta-btn {
+    margin-top: 30px;
+    background: #2d3f66;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.hero .cta-btn:hover {
+    background: #3f5a91;
+    transform: translateY(-3px);
+}
+
+/* =============================
+   SEARCH BAR
+============================= */
+.search-bar {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 12px 25px;
+    background-color: #1b2a49;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #2d3f66;
+}
+
+/* =============================
+   RECOMMENDED BOOKS
+============================= */
+.book-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.book-section h2 {
+    color: #1b2a49;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1b2a49;
+    padding-left: 10px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-card h3 {
+    font-size: 16px;
+    margin: 10px 0 4px;
+}
+
+.book-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* =============================
+   FOOTER
+============================= */
+.footer {
+    background: #0f1b2d;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #9ab4ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
